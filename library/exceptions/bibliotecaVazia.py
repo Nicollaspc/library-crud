@@ -1,0 +1,2 @@
+class BibliotecaVaziaError(Exception):
+    pass

@@ -65,17 +65,17 @@ class BancoDeDados:
             except sqlite3.Error as e:
                 raise sqlite3.Error(f"Erro ao listar livros: {e}")
     
-    def atualizar_preco_livro(self, preco_livro: float, titulo_livro: str):
+    def atualizar_preco_livro(self, preco_livro: float, isbn: str):
         if self.conn:
             try:
                 cursor = self.conn.cursor()
                 cursor.execute(
-                    "UPDATE livro SET preco = ? WHERE titulo = ?",
-                    (preco_livro, titulo_livro)
+                    "UPDATE livro SET preco = ? WHERE isbn = ?",
+                    (preco_livro, isbn)
                 )
                 self.conn.commit()
             except sqlite3.Error as e:
-                raise sqlite3.Error(f"Erro ao dar update no preco do livro com o titulo {titulo_livro}: {e}")
+                raise sqlite3.Error(f"Erro ao dar update no preco do livro com o isbn {isbn}: {e}")
     
     def deletar_livro(self, titulo_livro):
         if self.conn:
