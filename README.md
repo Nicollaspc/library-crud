@@ -8,7 +8,7 @@ O objetivo do projeto é praticar conceitos reais de desenvolvimento backend, or
 
 # 💻 Ferramentas e Tecnologias
 
-[![My Skills](https://skillicons.dev/icons?i=python,sqlite,git,github,vscode)](https://skillicons.dev)
+[![My Skills](https://skillicons.dev/icons?i=python,js,flask,tailwind,sqlite,git,github,vscode)](https://skillicons.dev)
 
 ---
 
