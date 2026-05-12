@@ -1,7 +1,7 @@
 import sqlite3
 from livro import Livro
 class BancoDeDados:
-    def __init__(self, nome_banco="banco.sqlite" ) -> None:
+    def __init__(self, nome_banco="library/database/banco.sqlite" ) -> None:
         self.nome_banco = nome_banco
         self.conn = None
     
@@ -20,6 +20,7 @@ class BancoDeDados:
                     id INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,
                     titulo TEXT NOT NULL,
                     autor TEXT NOT NULL,
+                    categoria TEXT NOT NULL,
                     paginas INTEGER NOT NULL,
                     isbn TEXT NOT NULL,
                     preco FLOAT NOT NULL
@@ -34,10 +35,10 @@ class BancoDeDados:
                 cursor = self.conn.cursor()
                 cursor.execute(
                     """
-                    INSERT INTO livro (titulo,autor,paginas,isbn,preco)
+                    INSERT INTO livro (titulo,autor,categoria,paginas,isbn,preco)
                     VALUES (?,?,?,?,?)
                     """,
-                    (livro.titulo,livro.autor,livro.paginas,livro.isbn,livro.preco)
+                    (livro.titulo,livro.autor,livro.categoria,livro.paginas,livro.isbn,livro.preco)
                 )
                 self.conn.commit()
             except sqlite3.DataError as e:
@@ -57,7 +58,7 @@ class BancoDeDados:
                 livros = []
                 
                 for linha in resultado:
-                    livro = Livro(titulo=linha[1],autor=linha[2],paginas=linha[3],isbn=linha[4],preco=linha[5])
+                    livro = Livro(titulo=linha[1],autor=linha[2],categoria=linha[3],paginas=linha[4],isbn=linha[5],preco=linha[6])
                     livros.append(livro)
                     
                 return livros

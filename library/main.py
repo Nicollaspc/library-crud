@@ -30,11 +30,12 @@ if __name__ == "__main__":
                 case 1:
                     titulo = input("Título: ")
                     autor = input("Autor: ")
+                    categoria = input("Categoria: ")
                     paginas = int(input("Páginas: "))
                     isbn = input("ISBN: ")
                     preco = float(input("Preço: "))
                     
-                    livro = Livro(titulo,autor,paginas,isbn,preco)
+                    livro = Livro(titulo,autor,categoria,paginas,isbn,preco)
                     biblioteca.adicionar_livro(livro)
                     print("Livro cadastrado com sucesso")
                 
