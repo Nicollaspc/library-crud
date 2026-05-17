@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="pt-br" >
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Configurações - Versora</title>
+    <link rel="shortcut icon" href="../static/img/versura icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="../static/css/output.css">
+    <link rel="stylesheet" href="../static/css/util.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.13.1/font/bootstrap-icons.min.css"
+        integrity="sha512-t7Few9xlddEmgd3oKZQahkNI4dS6l80+eGEzFQiqtyVYdvcSG2D3Iub77R20BdotfRPA9caaRkg1tyaJiPmO0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body id="body" class="transition-colors duration-300">
+    <div class="flex h-screen">
+        <div class="flex flex-col gap-2 bg-[#F4F4F5] h-screen border-r border-gray-200 w-64">
+            <div class="flex items-center gap-2 ml-6 mt-7">
+                <img src="../static/img/versura icon.png" alt="Versora" class="w-10">
+                <h1 class="text-[#FE0072] text-[24px] font-bold">Versora</h1>
+            </div>
+            <div class="flex items-center gap-4 ml-6">
+                <p class="text-[#2E2E2E] text-[14px]">Sistema de Biblioteca</p>
+            </div>
+
+            <hr class="border-t border-gray-200">
+
+            <nav class="flex flex-col gap-4 mx-5 mt-3">
+                <a href="../templates/index.html"
+                    class="flex items-center gap-3 px-4 py-2 rounded-[14px] text-[#212121] text-[16px] hover:bg-gray-200 transition-all duration-300">
+                    <i class="bi bi-grid"></i>Dashboard
+                </a>
+                <a href="./templates/livros.html"
+                    class="flex items-center gap-3 px-4 py-2 rounded-[14px] text-[#212121] text-[16px] hover:bg-gray-200 transition-all duration-300">
+                    <i class="bi bi-book"></i>Livros
+                </a>
+                <a href="./templates/usuarios.html"
+                    class="flex items-center gap-3 px-4 py-2 rounded-[14px] text-[#212121] text-[16px] hover:bg-gray-200 transition-all duration-300">
+                    <i class="bi bi-people"></i>Usuários
+                </a>
+                <a href="./templates/emprestimos.html"
+                    class="flex items-center gap-3 px-4 py-2 rounded-[14px] text-[#212121] text-[16px] hover:bg-gray-200 transition-all duration-300">
+                    <i class="bi bi-arrow-left-right"></i>Empréstimos
+                </a>
+                <a href="./templates/configuracoes.html"
+                    class="flex items-center gap-3 px-4 py-2 rounded-[14px] bg-[#FE0072] text-white text-[16px] hover:shadow-md transition-all duration-300">
+                    <i class="bi bi-gear"></i>Configurações
+                </a>
+            </nav>
+
+            <div class="flex flex-col gap-4 mt-auto mb-10">
+                <hr class="border-t border-gray-200">
+                <div class="flex mx-5">
+                    <a href=""
+                        class="flex items-center w-full border border-gray-300 text-black pl-4 p-2 gap-3 text-[16px] rounded-[14px] transition-all duration-300 hover:scale-105 hover:bg-[#FE0072] hover:text-white">
+                        <i class="bi bi-box-arrow-right"></i>Sair
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="flex flex-col gap-4 flex-1 bg-white overflow-auto">
+            <div class="flex items-center justify-between px-10 py-5 border-b border-gray-200 bg-white sticky top-0 z-40">
+                <div class="relative group">
+                    <i
+                        class="bi bi-search absolute left-3 top-1/2 -translate-y-1/2 text-gray-400 z-10 transition-all duration-300 group-focus-within:text-zinc-500 group-focus-within:scale-110"></i>
+                    <input type="text" placeholder="Buscar configurações..."
+                        class="relative border border-gray-200 bg-[#F4F4F5] text-[#212121] pl-10 pr-3 py-1.5 w-80 rounded-2xl outline-none shadow-sm transition-all duration-300 focus:border-zinc-400 focus:scale-105 focus:ring-4 focus:ring-zinc-200">
+                </div>
+                <div class="flex items-center gap-4">
+                    <div
+                        class="w-10 h-10 flex items-center justify-center bg-[#F4F4F5] rounded-full transition-all duration-300 hover:bg-zinc-200 hover:scale-105 cursor-pointer">
+                        <i class="bi bi-bell text-[16px] text-gray-600"></i>
+                    </div>
+                    <div class="w-0.5 h-10 bg-[#FE0072]"></div>
+                    <div class="flex items-center gap-2 cursor-pointer">
+                        <img src="../static/img/user.jpg" alt="Nicollas" class="w-10 h-10 rounded-full">
+                        <span class="text-[#212121] font-medium">Nicollas</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex flex-col px-10 gap-6 pb
+                <!-- Title -->
+                <div>
+                    <h1 class=" text-3xl font-bold text-[#212121]">Configurações</h1>
+                <p class="text-[#2E2E2E] text-sm mt-1">Gerenciar configurações do sistema</p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+                <h1>Configurações</h1>
+                <p class="text-[#2E2E2E]ed-2xl shadow-md border border-gray-200 dark:border-gray-700 p-6">
+                <h2 class="text-xl font-semibold text-[#212121] mb-4 flex items-center gap-2">
+                    <i class="bi bi-person-circle"></i>Perfil
+                </h2>
+                <div class="space-y-4">
+                    <div>
+                        <label class="block text-gray-600 text-sm mb-2">Nome</label>
+                        <input type="text" value="Nicollas"
+                            class="w-full px-4 py-2 border border-gray-200 bg-white text-[#212121] rounded-lg focus:ring-2 focus:ring-[#FE0072]">
+                    </div>
+                    <div>
+                        <label class="block text-gray-600 text-sm mb-2">Email</label>
+                        <input type="email" value="nicollas@email.com"
+                            class="w-full px-4 py-2 border border-gray-200 bg-white text-[#212121] rounded-lg focus:ring-2 focus:ring-[#FE0072]">
+                    </div>
+                    <button
+                        class="w-full bg-[#FE0072] text-white px-4 py-2 rounded-lg hover:shadow-lg transition-all duration-300 mt-4">Salvar
+                        Alterações</button>
+                </div>
+            </div>
+
+                </div>
+                <div class="bg-white rounded-2xl shadow-md border border-gray-200 p-6">
+                <h2 class="text-xl font-semibold text-[#212121] mb-4 flex items-center gap-2">
+                    <i class="bi bi-lock-fill"></i>Segurança
+                </h2>
+                <div class="space-y-4">
+                    <div>
+                        <label class="block text-gray-600 text-sm mb-2">Senha Atual</label>
+                        <input type="password" placeholder="••••••••"
+                            class="w-full px-4 py-2 border border-gray-200 bg-white text-[#212121] rounded-lg focus:ring-2 focus:ring-[#FE0072]">
+                    </div>
+                    <div>
+                        <label class="block text-gray-600 text-sm mb-2">Nova Senha</label>
+                        <input type="password" placeholder="••••••••"
+                            class="w-full px-4 py-2 border border-gray-200 bg-white text-[#212121] rounded-lg focus:ring-2 focus:ring-[#FE0072]">
+                    </div>
+                    <button
+                        class="w-full bg-[#FE0072] text-white px-4 py-2 rounded-lg hover:shadow-lg transition-all duration-300 mt-4">Alterar
+                        Senha</button>
+                </div>
+                </div>
+                <div class="bg-white rounded-2xl shadow-md border border-gray-200 p-6">
+                <h2 class="text-xl font-semibold text-[#212121] mb-4 flex items-center gap-2">
+                    <i class="bi bi-sliders"></i>Sistema
+                </h2>
+                <div class="space-y-4">
+                    <div class="flex items-center justify-between">
+                        <label class="text-gray-600">Notificações</label>
+                        <input type="checkbox" checked class="w-5 h-5 rounded">
+                    </div>
+                    <div class="flex items-center justify-between">
+                        <label class="text-gray-600">Modo Escuro</label>
+                        <input type="checkbox" class="w-5 h-5 rounded">
+                    </div>
+                    <div class="flex items-center justify-between">
+                        <label class="text-gray-600">Sincronização Automática</label>
+                        <input type="checkbox" checked class="w-5 h-5 rounded">
+                    </div>
+                </div>
+                </div>
+                <div class="bg-white dark:bg-gray-800 rounded-2xl shadow-md border border-gray-200 dark:border-gray-700 p-6">
+                <h2 class="text-xl font-semibold text-[#212121] dark:text-white mb-4 flex items-center gap-2">
+                    <i class="bi bi-database"></i>Banco de Dados
+                </h2>
+                <div class="space-y-3">
+                    <p class="text-gray-600 text-sm">Última atualização: 13/05/2026 às 14:30</p>
+                    <button
+                        class="w-full bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-600 transition-all duration-300">Fazer
+                        Backup</button>
+                    <button
+                        class="w-full bg-orange-500 text-white px-4 py-2 rounded-lg hover:bg-orange-600 transition-all duration-300">Restaurar
+                        Backup</button>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Versora</title>
+    <link rel="shortcut icon" href="../static/img/versura icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="../static/css/output.css">
+    <link rel="stylesheet" href="../static/css/util.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.13.1/font/bootstrap-icons.min.css"
+        integrity="sha512-t7Few9xlddEmgd3oKZQahkNI4dS6l80+eGEzFQiqtyVYdvcSG2D3Iub77R20BdotfRPA9caaRkg1tyaJiPmO0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.tailwindcss.com" rel="stylesheet">
+</head>
+
+<body class="bg-[#FE0072] min-h-screen flex items-center justify-center">
+    <div class="w-full max-w-md">
+        <div class="bg-white rounded-[20px] shadow-2xl p-8">
+            <div class="flex justify-center mb-8">
+                <div class="flex items-center gap-2">
+                    <img src="../static/img/versura icon.png" alt="Versora" class="w-12">
+                    <h1 class="text-[#FE0072] text-[28px] font-bold">Versora</h1>
+                </div>
+            </div>
+            <div class="text-center mb-8">
+                <h2 class="text-[#212121] text-[24px] font-bold mb-2">Bem-vindo de volta</h2>
+                <p class="text-gray-600 text-[14px]">Acesse sua conta na Versora</p>
+            </div>
+            <form action="/login" method="POST" class="space-y-5">
+                <div>
+                    <div class="relative">
+                        <i class="bi bi-envelope absolute left-4 top-3.5 text-gray-400 text-[16px]"></i>
+                        <input type="email" id="email" name="email" placeholder="E-mail" required
+                            class="w-full pl-10 pr-4 py-3 border-2 border-gray-200 rounded-xl focus:outline-none focus:border-[#FE0072] transition-colors duration-300 text-[14px]">
+                    </div>
+                </div>
+                <div>
+                    <label for="senha" class="block text-[#212121] font-semibold text-[14px] mb-2">
+
+                    </label>
+                    <div class="relative">
+                        <i class="bi bi-lock absolute left-4 top-3.5 text-gray-400 text-[16px]"></i>
+                        <input type="password" id="senha" name="senha" placeholder="Password" required
+                            class="w-full pl-10 pr-4 py-3 border-2 border-gray-200 rounded-xl focus:outline-none focus:border-[#FE0072] transition-colors duration-300 text-[14px]">
+                    </div>
+                </div>
+                <div class="flex items-center gap-2">
+                    <input type="checkbox" id="lembrar" name="lembrar" class="w-4 h-4 rounded cursor-pointer">
+                    <label for="lembrar" class="text-gray-600 text-[14px] cursor-pointer">
+                        Lembrar-me neste dispositivo
+                    </label>
+                </div>
+
+                <button type="submit"
+                    class="w-full bg-[#FE0072] [#FF6B9D] text-white font-semibold py-3 rounded-xl cursor-pointer hover:shadow-lg transition-all duration-300  ease-in-out hover:bg-[#d60060] text-[16px] mt-2">
+                    Entrar
+                </button>
+            </form>
+            <div class="flex items-center gap-4 my-6">
+                <div class="flex-1 h-px bg-gray-200"></div>
+                <span class="text-gray-400 text-[12px]">OU</span>
+                <div class="flex-1 h-px bg-gray-200"></div>
+            </div>
+            <div class="text-center mt-8">
+                <p class="text-gray-600 text-[14px]">
+                    Não tem uma conta?
+                    <a href="../templates/cadastro.html" class="text-[#FE0072] font-semibold hover:underline">
+                        Cadastre-se
+                    </a>
+                </p>
+            </div>
+            <div class="text-center mt-4">
+                <a href="#" class="text-gray-500 text-[12px]  hover:text-[#FE0072] transition-colors">
+                    Esqueceu a senha?
+                </a>
+            </div>
+        </div>
+        <div class="text-center mt-8 text-white text-[12px]">
+            <p>© 2026 Versora. Todos os direitos reservados.</p>
+        </div>
+    </div>
+</body>
+
+</html>
